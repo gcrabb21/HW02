@@ -53,24 +53,26 @@ public:
 	void save();
 
 private:
-	class Directory_Entry /* Exercise 1.6: Please complete the definition of the Directory_Entry class here. - Ed/Kent */
+	class Directory_Entry //Implimented by Gunnar J Crabb
 	{
+	private:
+		std::string name;
+		std::string number;
 	public:
 		Directory_Entry() {} //default no argument constructor
 		Directory_Entry(std::string the_name, std::string the_number) {
-			//constructor not implemented yet
+			name = the_name;
+			number = the_number;
 		}
-		std::string get_name() const {
-			return ""; //method not implimented yet
+		std::string get_name() const { //retrieves the name
+			return name;
 		}
-		std::string get_number() const {
-			return ""; //method not implemented yet
+		std::string get_number() const { //retrieves the number
+			return number;
 		}
-		void set_number(const std::string& new_number) {
-			//method not implemented yet
+		void set_number(const std::string& new_number) { //sets a new number to the class
+			number = new_number;
 		}
-	
-	private:
 
 	};
 
